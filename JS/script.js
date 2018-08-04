@@ -3,6 +3,9 @@ window.onload = function () {
    
 };
 
+
+
+
 function init() {
     console.log('init fired');
  
@@ -114,7 +117,7 @@ var data = {"total":0,"rows":[]};
 
 
 
-$(function(){
+$(function  (){
     
     var getjson = localStorage.getItem('data');
     var totjson = localStorage.getItem('tdata');
@@ -137,3 +140,4 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+

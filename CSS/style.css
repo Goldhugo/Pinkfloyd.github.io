@@ -122,9 +122,10 @@ vertical-align: middle;
 }
 .navbar {
     width:890px; 
-    height: auto;  
+     
     position:fixed;
     left:50%;
+    height: auto; 
     right:50%;
     transform:translate(-49%, 250%);
     position: fixed;
@@ -147,13 +148,17 @@ vertical-align: middle;
     
     background-color: blue;
     
-    
+    color: white;
     padding: 20px 46px;
     text-align: center; 
     text-decoration: none;
     display: inline-table;
     height:auto;
 }
+.Button:hover{
+    background-color: darkblue;
+}
+
 #mySidenav a {
     position: fixed;
     left: -80px;
@@ -189,6 +194,14 @@ vertical-align: middle;
 #members {
     top: 200px;
     background-color: #555
+}
+#store {
+    top: 260px;
+    background-color: purple
+}
+#customs {
+    top: 320px;
+    background-color: orange
 }
 h2{
     font-size: 21px;
@@ -286,17 +299,19 @@ h4{
 }
 .products{
 			list-style:none;
-			margin-right:300px;
-			padding:0px;
-			height:100%;
+			
             position: relative;
             top: 400px;
+    margin-right:300px;
+			padding:0px;
+			height:100%;
     background-color: black;
 		}
 		.products li{
 			display:inline-block;
+            margin:10px;
 			float:left;
-			margin:10px;
+			
 		}
 .total{
 			margin:0;
@@ -312,7 +327,7 @@ h4{
 .item{
 			display:block;
 			text-decoration:none;
-            border: 2px solid #e11d22;
+            border: 2px solid white;
 		}
 		.item p{
 			margin:0;
@@ -326,9 +341,49 @@ h4{
 			top:142px;
 			width:280px;
 			height:100%;
-			background:#e11d22;
+			background:red;
 			padding:0px 10px;
 		}
+#darkside {
+    visibility: hidden;
+}
+#mycanvas{
+    position: absolute;
+    z-index:100;
+    background-color:transparent;
+    margin: 0px;
+    top: 400px;
+    left: 50px;
+    right: 125px;
+    z-index: 100;
+    float: none;
+}
+#controls {
+overflow: hidden;
+    background-color:  red;
+    height: 9000px;
+    z-index: 3;
+    width: 400px;
+    float: right;
+    top: 200px;
+    Right: 400px;
+    margin: 0px;
+    
+    border:1px solid #ffffff;
+}
+.hiddenColor {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+#custom{
+    position: relative;
+    top:20px
+}
+/* media Queries... */
 
 @media only screen and (max-width : 400px) {
     
