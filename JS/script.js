@@ -12,7 +12,7 @@ function init() {
 }
 
 $(window).scroll(function() {
-    if ($(this).scrollTop()>400){
+    if ($(this).scrollTop()>500){
         $('.foreground-video').fadeOut();
         
     }
@@ -42,7 +42,7 @@ var data = {"total":0,"rows":[]};
                 
                 else{
                     
-                console.log("NO LOCAL STORAGE");    
+                console.log("NO  STORAGE");    
                 }
             
 			$('#cartcontent').datagrid({

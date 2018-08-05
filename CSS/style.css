@@ -307,7 +307,7 @@ h4{
 			height:100%;
     background-color: black;
 		}
-		.products li{
+.products li{
 			display:inline-block;
             margin:10px;
 			float:left;
@@ -341,7 +341,7 @@ h4{
 			top:142px;
 			width:280px;
 			height:100%;
-			background:red;
+			background: blue ;
 			padding:0px 10px;
 		}
 #darkside {
@@ -351,7 +351,7 @@ h4{
     position: absolute;
     z-index:100;
     background-color:transparent;
-    margin: 0px;
+    margin: 10px;
     top: 400px;
     left: 50px;
     right: 125px;
@@ -360,8 +360,8 @@ h4{
 }
 #controls {
 overflow: hidden;
-    background-color:  red;
-    height: 9000px;
+    background-color:  deepskyblue;
+    height: 2000px;
     z-index: 3;
     width: 400px;
     float: right;
@@ -369,9 +369,9 @@ overflow: hidden;
     Right: 400px;
     margin: 0px;
     
-    border:1px solid #ffffff;
+    border:1px solid white;
 }
-.hiddenColor {
+.hiddenColorbox {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -396,16 +396,19 @@ overflow: hidden;
                 
     }
             
-        .logo1{
-                width:200px; 
-                height: auto; 
-    }
-    
+        
     #play{
         margin: 0px;
         padding: 0px;
     }
-            
+     .logo1{
+                width:200px; 
+                height: auto; 
+    }
+     .logo{
+                width:200px; 
+                height: auto; 
+    }      
             
     
 }
