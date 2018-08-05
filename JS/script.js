@@ -7,18 +7,18 @@ window.onload = function () {
 
 
 function init() {
-    console.log('init fired');
+    console.log('init working');
  
 }
 
 $(window).scroll(function() {
     if ($(this).scrollTop()>500){
-        $('.foreground-video').fadeOut();
+        $('.foregroundvideo').fadeOut();
         
     }
     else 
         {
-            $('.foreground-video').fadeIn();
+            $('.foregroundvideo').fadeIn();
         }
  });
 $(function(){
@@ -45,10 +45,10 @@ var data = {"total":0,"rows":[]};
                 console.log("NO  STORAGE");    
                 }
             
-			$('#cartcontent').datagrid({
+			$('#cartitems').datagrid({
 				singleSelect:true
 			});
-			$('.item').draggable({
+			$('.product').draggable({
 				revert:true,
 				proxy:'clone',
 				onStartDrag:function(){
@@ -104,30 +104,30 @@ var data = {"total":0,"rows":[]};
 			}
 			add();
 			totalCost += price;
-			$('#cartcontent').datagrid('loadData', data);
+			$('#cartitems').datagrid('loadData', data);
 			$('div.cart .total').html('Total: £'+totalCost);
             
             var jsonstring = JSON.stringify(data);
                 
             console.log(data);
                 
-            localStorage.setItem('data', jsonstring);
-            localStorage.setItem('tdata', totalCost);
+            localStorage.setItem('tdata1', jsonstring);
+            localStorage.setItem('tdata2', totalCost);
 		}
 
 
 
 $(function  (){
     
-    var getjson = localStorage.getItem('data');
-    var totjson = localStorage.getItem('tdata');
+    var getjson = localStorage.getItem('tdata1');
+    var totjson = localStorage.getItem('tdata2');
     
    var parsejson = JSON.parse(getjson);
     
     console.log(getjson);
     console.log(parsejson);
     
-    $('#cartcontent').datagrid('loadData', parsejson);
+    $('#cartitems').datagrid('loadData', parsejson);
     $('div.cart .total').html('Total: £'+totjson);
     
 

@@ -4,14 +4,15 @@
 body {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
-    display: block;
-    background-color: black;
-    overflow:scroll;
-    overflow-x:hidden;
+    
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+    display: block;
+    background-color: black;
+    overflow:scroll;
+    overflow-x:hidden;
 }
 section{
     background-size:auto;
@@ -22,8 +23,8 @@ section{
 ::-webkit-scrollbar { 
     display: none; 
 }
-
-.background-video {
+/*background video */
+.backgroundvideo {
     background: #000;
     position: relative;
     top: 0;
@@ -33,7 +34,7 @@ section{
     z-index: -99;
     
 }
-.foreground-video,.background-video iframe {
+.foregroundvideo,.backgroundvideo iframe {
     position: fixed;
     top: 0;
     left: 0;
@@ -41,8 +42,12 @@ section{
     height: 100%;
     pointer-events: all;
 }
-.musicvid {
+.pausable {
     z-index: auto;
+}
+#play {
+    padding: 50px;
+    
 }
 
 h1 {
@@ -63,12 +68,13 @@ h1 {
 .logo1{
     width:400px; 
     height: auto;  
-    position:fixed;
-    left:50%;
-    right:50%;
+    
     transform:translate(-50%, -5%);
     position: fixed;
     z-index: 999;
+    position:fixed;
+    left:50%;
+    right:50%;
 }
 #cover {
     position: relative;
@@ -120,18 +126,7 @@ vertical-align: middle;
     display: block;
     margin: 0 auto;
 }
-.navbar {
-    width:890px; 
-     
-    position:fixed;
-    left:50%;
-    height: auto; 
-    right:50%;
-    transform:translate(-49%, 250%);
-    position: fixed;
-    z-index: 999;
-    ;
-}
+
 #map {
     
     display: table-cell;
@@ -143,6 +138,19 @@ vertical-align: middle;
     display: table-cell;
     vertical-align: middle;
     display: block;
+}
+/* Nav bar and siide bar */
+.navbar {
+    width:890px; 
+     
+    position:fixed;
+    left:50%;
+    height: auto; 
+    right:50%;
+    transform:translate(-49%, 250%);
+    position: fixed;
+    z-index: 999;
+    ;
 }
 .Button{
     
@@ -224,21 +232,7 @@ h4{
     background-color: black;
     height: 400px;
 }
-.column {
-  float: left;
-  width: 22.33%;
-  padding: 5px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-   
-}
-#portrait {
-    height: 300px;
-    width: 300px;
-}
+
 .p-table tr:nth-child(odd) {
     background-color: #fff;
 }
@@ -277,9 +271,8 @@ h4{
     width: 100%;
     display: table;
 }
-#play {
-    padding: 50px;
-}
+
+/* Flip images*/
 .flip {
     height: 300px;
     width: 300px;
@@ -297,6 +290,18 @@ h4{
      word-wrap:break-word;
     
 }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+   
+}
+#portrait {
+    height: 300px;
+    width: 300px;
+}
+/*Drag and drop shopping cart */
 .products{
 			list-style:none;
 			
@@ -320,20 +325,20 @@ h4{
             color: white;
 		}
 
-#cartcontent{
-    background-color: #e11d22;
-    color: #e11d22;
+#cartitems{
+    background-color: blue;
+    color: blue;
 }
-.item{
+.product{
 			display:block;
 			text-decoration:none;
             border: 2px solid white;
 		}
-		.item p{
+		.product p{
 			margin:0;
 			font-weight:bold;
 			text-align:center;
-			color:#c3c3c3;
+			color:white;
 		}
 		.cart{
 			position:fixed;
@@ -351,28 +356,29 @@ h4{
     position: absolute;
     z-index:100;
     background-color:transparent;
+    
+    float: none;
+    border: 2px solid white;
     margin: 10px;
     top: 400px;
     left: 50px;
     right: 125px;
     z-index: 100;
-    float: none;
-    border: 2px solid white;
 }
 #controls {
 overflow: hidden;
     background-color:  deepskyblue;
     height: 2000px;
+    
+    Right: 400px;
+    margin: 0px;
     z-index: 3;
     width: 400px;
     float: right;
     top: 200px;
-    Right: 400px;
-    margin: 0px;
-    
     border:1px solid white;
 }
-.hiddenColorbox {
+.Colorbox {
   position: absolute;
   left: -10000px;
   top: auto;

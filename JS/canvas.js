@@ -138,23 +138,23 @@ window.onload = function() {
 
 function ShowColour(){
     
-  document.getElementById("C").focus();
-  document.getElementById("C").click();
-  var colour = document.getElementById("C").value;
+  document.getElementById("Colorbtn1").focus();
+  document.getElementById("Colorbtn1").click();
+  var colour = document.getElementById("Colorbtn1").value;
   return colour;
     
 }
 
 function ChangeColour(){
     
-    var inputcolour = document.getElementById("C").value;
+    var inputcolour = document.getElementById("Colorbtn1").value;
     document.getElementById("mycanvas").style.backgroundColor = inputcolour;
 }
 function ShowColour1(){
     
-  document.getElementById("C1").focus();
-  document.getElementById("C1").click();
-  var colour = document.getElementById("C1").value;
+  document.getElementById("Colorbtn2").focus();
+  document.getElementById("Colorbtn2").click();
+  var colour = document.getElementById("Colorbtn2").value;
   return colour;
     
 }
