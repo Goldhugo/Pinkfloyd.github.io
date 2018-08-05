@@ -357,6 +357,7 @@ h4{
     right: 125px;
     z-index: 100;
     float: none;
+    border: 2px solid white;
 }
 #controls {
 overflow: hidden;
