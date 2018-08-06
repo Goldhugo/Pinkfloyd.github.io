@@ -5,10 +5,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
     
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+    
     display: block;
     background-color: black;
     overflow:scroll;
@@ -86,6 +83,17 @@ h1 {
     text-align: center;
 display: table-cell;
 vertical-align: middle; 
+}
+.box {
+  display: flex;
+  align-items: stretch;
+    padding: 5px;
+    margin: 1px;
+    text-align: center
+}
+#fan {
+    height: 300px;
+    width: 300px;
 }
 #textwo {
      
@@ -280,7 +288,11 @@ h4{
      word-wrap:break-word;
     
 }
-
+.column {
+  float: left;
+  width: 22.33%;
+  padding: 5px;
+}
 .row::after {
   content: "";
   clear: both;
