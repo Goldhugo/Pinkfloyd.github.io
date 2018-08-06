@@ -55,7 +55,7 @@ h1 {
   letter-spacing: 4px;
 }
 .logo {
-    width:400px; 
+    width:350px; 
     height: auto;  
     position:fixed;
     left:50%;
@@ -65,17 +65,7 @@ h1 {
     z-index: 999;
     display: block;
 }
-.logo1{
-    width:400px; 
-    height: auto;  
-    
-    transform:translate(-50%, -5%);
-    position: fixed;
-    z-index: 999;
-    position:fixed;
-    left:50%;
-    right:50%;
-}
+
 #cover {
     position: relative;
         background-color: black;
@@ -314,9 +304,9 @@ h4{
 		}
 .products li{
 			display:inline-block;
-            margin:10px;
+            
 			float:left;
-			
+			margin:5px;
 		}
 .total{
 			margin:0;
@@ -394,11 +384,11 @@ overflow: hidden;
 
 @media only screen and (max-width : 400px) {
     
-        .foreground-video,.background-video iframe {
+        .foregroundvideo,.backgroundvideo iframe {
         visibility: hidden;
     }
     
-    .background-video, .,foreground-video{
+    .backgroundvideo, .,foregroundvideo{
                 height: 200px;
                 
     }
@@ -408,10 +398,8 @@ overflow: hidden;
         margin: 0px;
         padding: 0px;
     }
-     .logo1{
-                width:200px; 
-                height: auto; 
-    }
+    
+    
      .logo{
                 width:200px; 
                 height: auto; 

@@ -136,26 +136,26 @@ window.onload = function() {
 
                                
 
-function ShowColour(){
+function ShowColor(){
     
   document.getElementById("Colorbtn1").focus();
   document.getElementById("Colorbtn1").click();
-  var colour = document.getElementById("Colorbtn1").value;
-  return colour;
+  var color = document.getElementById("Colorbtn1").value;
+  return color;
     
 }
 
-function ChangeColour(){
+function ChangeColor(){
     
     var inputcolour = document.getElementById("Colorbtn1").value;
     document.getElementById("mycanvas").style.backgroundColor = inputcolour;
 }
-function ShowColour1(){
+function ShowColor1(){
     
   document.getElementById("Colorbtn2").focus();
   document.getElementById("Colorbtn2").click();
-  var colour = document.getElementById("Colorbtn2").value;
-  return colour;
+  var color = document.getElementById("Colorbtn2").value;
+  return color;
     
 }
 var button = document.getElementById('btn-download');
